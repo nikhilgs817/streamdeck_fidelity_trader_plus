@@ -16,24 +16,108 @@
       "operation": "back"
     },
     {
-      "id": "focus",
-      "name": "Focus app",
-      "glyph": "target",
-      "theme": "ocean",
-      "description": "Bring the verified app window to the front.",
-      "operation": "focus"
+      "id": "buy",
+      "name": "Buy",
+      "glyph": "tradebuy",
+      "theme": "emerald",
+      "trading": "submit",
+      "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
+      "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
+      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
     },
     {
-      "id": "tools",
-      "name": "Tools",
-      "glyph": "grid",
-      "theme": "gold",
-      "description": "Open Tools through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "id": "sell",
+      "name": "Sell",
+      "glyph": "tradesell",
+      "theme": "crimson",
+      "trading": "submit",
+      "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
+      "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
+      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
+    },
+    {
+      "id": "otoco",
+      "name": "OTOCO",
+      "glyph": "tradebracket",
+      "theme": "cosmic",
+      "trading": "bracket",
+      "description": "Open the editable entry, profit-target and stop-loss bracket. This button does not send the order.",
       "menu": [
         [
           "Tools"
+        ],
+        [
+          "Trade"
+        ],
+        [
+          "Conditional"
         ]
-      ]
+      ],
+      "choices": [
+        {
+          "names": [
+            "Action"
+          ],
+          "options": [
+            "Buy + Sell bracket",
+            "Buy + Sell bracket (OTOCO)",
+            "Buy with sell bracket",
+            "Buy with sell bracket (OTOCO)"
+          ]
+        }
+      ],
+      "setup": "Verified manual path: Tools > Trade > Stocks dropdown > Conditional > Action > Buy + Sell bracket (OTOCO). Entry, target and stop remain editable. Automatic selection requires accessible app controls, which are not exposed on this PC; a shortcut override must open the editor rather than submit."
+    },
+    {
+      "id": "positions",
+      "name": "Positions",
+      "glyph": "briefcase",
+      "theme": "ocean",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Positions"
+        ]
+      ],
+      "trading": "panel",
+      "description": "Show open positions in the app, including position size and profit/loss.",
+      "setup": "Optional: enter a matching app hotkey for faster panel switching."
+    },
+    {
+      "id": "orders",
+      "name": "Orders",
+      "glyph": "tradeorders",
+      "theme": "gold",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Orders"
+        ]
+      ],
+      "trading": "panel",
+      "description": "Show working orders and fills.",
+      "setup": "Optional: enter a matching app hotkey for faster panel switching."
+    },
+    {
+      "id": "trade",
+      "name": "Trade ticket",
+      "glyph": "candles",
+      "theme": "mint",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Trade"
+        ]
+      ],
+      "trading": "panel",
+      "description": "Open the app trading workspace and editable trade controls.",
+      "setup": "Optional: enter a matching app hotkey for faster panel switching."
     },
     {
       "id": "chart",
@@ -48,148 +132,6 @@
         [
           "Chart",
           "Charts"
-        ]
-      ]
-    },
-    {
-      "id": "watchlist",
-      "name": "Watchlist",
-      "glyph": "doc",
-      "theme": "lemonade",
-      "description": "Open Watchlist through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Tools"
-        ],
-        [
-          "Watchlist",
-          "Watchlists"
-        ]
-      ]
-    },
-    {
-      "id": "positions",
-      "name": "Positions",
-      "glyph": "briefcase",
-      "theme": "emerald",
-      "description": "Open Positions through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Tools"
-        ],
-        [
-          "Positions"
-        ]
-      ]
-    },
-    {
-      "id": "news",
-      "name": "News",
-      "glyph": "doc",
-      "theme": "coral",
-      "description": "Open News through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Tools"
-        ],
-        [
-          "News",
-          "News & Research"
-        ]
-      ]
-    },
-    {
-      "id": "alerts",
-      "name": "Alerts",
-      "glyph": "warning",
-      "theme": "sunset",
-      "description": "Open Alerts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Tools"
-        ],
-        [
-          "Alerts"
-        ]
-      ]
-    },
-    {
-      "id": "layouts",
-      "name": "Layouts",
-      "glyph": "grid",
-      "theme": "violet",
-      "description": "Open Layouts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Layouts",
-          "Layout"
-        ]
-      ]
-    },
-    {
-      "id": "settings",
-      "name": "Settings",
-      "glyph": "gear",
-      "theme": "peach",
-      "description": "Open Settings through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Settings"
-        ]
-      ]
-    },
-    {
-      "id": "copy",
-      "name": "Copy",
-      "glyph": "copy",
-      "theme": "violet",
-      "shortcut": "Ctrl+C",
-      "description": "Copy in the app. An optional custom shortcut can replace the default."
-    },
-    {
-      "id": "paste",
-      "name": "Paste",
-      "glyph": "paste",
-      "theme": "crimson",
-      "shortcut": "Ctrl+V",
-      "description": "Paste in the app. An optional custom shortcut can replace the default."
-    },
-    {
-      "id": "nextfield",
-      "name": "Next field",
-      "glyph": "push",
-      "theme": "azure",
-      "shortcut": "Tab",
-      "description": "Next field in the app. An optional custom shortcut can replace the default."
-    },
-    {
-      "id": "previousfield",
-      "name": "Previous field",
-      "glyph": "pull",
-      "theme": "iris",
-      "shortcut": "Shift+Tab",
-      "description": "Previous field in the app. An optional custom shortcut can replace the default."
-    },
-    {
-      "id": "escape",
-      "name": "Dismiss",
-      "glyph": "closewin",
-      "theme": "slate",
-      "shortcut": "Escape",
-      "description": "Dismiss a menu or dialog. Does not submit a form."
-    },
-    {
-      "id": "balances",
-      "name": "Balances",
-      "glyph": "dollar",
-      "theme": "tropical",
-      "description": "Open Balances through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
-      "menu": [
-        [
-          "Tools"
-        ],
-        [
-          "Balances"
         ]
       ]
     },
@@ -225,21 +167,376 @@
       ]
     },
     {
+      "id": "watchlist",
+      "name": "Watchlist",
+      "glyph": "doc",
+      "theme": "lemonade",
+      "description": "Open Watchlist through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Watchlist",
+          "Watchlists"
+        ]
+      ]
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "glyph": "gear",
+      "theme": "peach",
+      "description": "Open Settings through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Settings"
+        ]
+      ]
+    },
+    {
+      "id": "focus",
+      "name": "Focus app",
+      "glyph": "target",
+      "theme": "ocean",
+      "description": "Bring the verified app window to the front.",
+      "operation": "focus"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "glyph": "grid",
+      "theme": "gold",
+      "description": "Open Tools through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "id": "news",
+      "name": "News",
+      "glyph": "doc",
+      "theme": "coral",
+      "description": "Open News through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "News",
+          "News & Research"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "id": "alerts",
+      "name": "Alerts",
+      "glyph": "warning",
+      "theme": "sunset",
+      "description": "Open Alerts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Alerts"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "id": "layouts",
+      "name": "Layouts",
+      "glyph": "grid",
+      "theme": "violet",
+      "description": "Open Layouts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Layouts",
+          "Layout"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "id": "copy",
+      "name": "Copy",
+      "glyph": "copy",
+      "theme": "violet",
+      "shortcut": "Ctrl+C",
+      "description": "Copy in the app. An optional custom shortcut can replace the default.",
+      "hidden": true
+    },
+    {
+      "id": "paste",
+      "name": "Paste",
+      "glyph": "paste",
+      "theme": "crimson",
+      "shortcut": "Ctrl+V",
+      "description": "Paste in the app. An optional custom shortcut can replace the default.",
+      "hidden": true
+    },
+    {
+      "id": "nextfield",
+      "name": "Next field",
+      "glyph": "push",
+      "theme": "azure",
+      "shortcut": "Tab",
+      "description": "Next field in the app. An optional custom shortcut can replace the default.",
+      "hidden": true
+    },
+    {
+      "id": "previousfield",
+      "name": "Previous field",
+      "glyph": "pull",
+      "theme": "iris",
+      "shortcut": "Shift+Tab",
+      "description": "Previous field in the app. An optional custom shortcut can replace the default.",
+      "hidden": true
+    },
+    {
+      "id": "escape",
+      "name": "Dismiss",
+      "glyph": "closewin",
+      "theme": "slate",
+      "shortcut": "Escape",
+      "description": "Dismiss a menu or dialog. Does not submit a form.",
+      "hidden": false
+    },
+    {
+      "id": "balances",
+      "name": "Balances",
+      "glyph": "dollar",
+      "theme": "tropical",
+      "description": "Open Balances through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Balances"
+        ]
+      ],
+      "hidden": false
+    },
+    {
       "id": "shortcut",
       "name": "Custom shortcut",
       "glyph": "keyboard",
       "theme": "electric",
-      "description": "Set your own app shortcut, for example Ctrl+Shift+N."
+      "description": "Set your own app shortcut, for example Ctrl+Shift+N.",
+      "hidden": false
+    },
+    {
+      "id": "tradepage",
+      "name": "Trade",
+      "glyph": "grid",
+      "theme": "emerald",
+      "description": "Show the Trade Stream Deck page.",
+      "operation": "page",
+      "page": 0
+    },
+    {
+      "id": "planpage",
+      "name": "Plan",
+      "glyph": "grid",
+      "theme": "emerald",
+      "description": "Show the Plan / Scan Stream Deck page.",
+      "operation": "page",
+      "page": 1
+    },
+    {
+      "id": "managepage",
+      "name": "Manage",
+      "glyph": "grid",
+      "theme": "emerald",
+      "description": "Show the Manage Stream Deck page.",
+      "operation": "page",
+      "page": 2
+    },
+    {
+      "id": "riskcheck",
+      "name": "Risk check",
+      "glyph": "target",
+      "theme": "emerald",
+      "description": "Open your risk and position-sizing page. Configure its full URL.",
+      "operation": "url"
+    },
+    {
+      "id": "tradeplan",
+      "name": "Trade plan",
+      "glyph": "doc",
+      "theme": "emerald",
+      "description": "Open your trade plan: daily trend, setup, entry, invalidation, target and size. Configure its full URL.",
+      "operation": "url"
+    },
+    {
+      "id": "journal",
+      "name": "Journal",
+      "glyph": "doc",
+      "theme": "emerald",
+      "description": "Open your trading journal to record the setup, execution and outcome. Configure its full URL.",
+      "operation": "url"
+    },
+    {
+      "id": "partial",
+      "name": "Trim 1/3",
+      "glyph": "tradesell",
+      "theme": "emerald",
+      "description": "Send your configured partial-exit hotkey. The broker must calculate one third of the current position and preserve or resize remaining protection.",
+      "trading": "submit",
+      "requiresBinding": true,
+      "setup": "Requires a supported, verified broker hotkey. This action has no guessed default. If your broker does not provide it, use Positions / Orders to manage it manually."
+    },
+    {
+      "id": "breakeven",
+      "name": "Stop to B/E",
+      "glyph": "tradebracket",
+      "theme": "emerald",
+      "description": "Send your configured stop-to-breakeven hotkey. The broker must derive the actual fill price and remaining quantity.",
+      "trading": "submit",
+      "requiresBinding": true,
+      "setup": "Requires a supported, verified broker hotkey. This action has no guessed default. If your broker does not provide it, use Positions / Orders to manage it manually."
+    },
+    {
+      "id": "trail",
+      "name": "Trail stop",
+      "glyph": "tradebracket",
+      "theme": "emerald",
+      "description": "Open the broker stop editor or send its configured trailing-stop hotkey. Review the remaining size and 5-minute structure.",
+      "trading": "panel",
+      "requiresBinding": true,
+      "setup": "Requires a supported, verified broker hotkey. This action has no guessed default. If your broker does not provide it, use Positions / Orders to manage it manually."
+    },
+    {
+      "id": "flatten",
+      "name": "Flatten",
+      "glyph": "closewin",
+      "theme": "emerald",
+      "description": "Hold for one second to send the configured close-position action once. Match its cancel/close behavior in your broker.",
+      "trading": "submit",
+      "requiresBinding": true,
+      "setup": "Requires a supported, verified broker hotkey. This action has no guessed default. If your broker does not provide it, use Positions / Orders to manage it manually.",
+      "holdMs": 1000
+    },
+    {
+      "id": "cancelall",
+      "name": "Cancel orders",
+      "glyph": "tradeorders",
+      "theme": "emerald",
+      "description": "Hold for one second to send the configured cancel-orders action once. Cancelling protective orders can leave a position unprotected.",
+      "trading": "submit",
+      "requiresBinding": true,
+      "setup": "Requires a supported, verified broker hotkey. This action has no guessed default. If your broker does not provide it, use Positions / Orders to manage it manually.",
+      "holdMs": 1000
     }
   ],
   "uuid": "com.dailyops.fidelitytrader.v1",
   "name": "Fidelity Trader+ Controls",
-  "version": "1.0.0.0",
+  "version": "1.1.0.0",
   "profile": "profiles/Fidelity Trader+",
   "selector": {
     "names": [
       "Fidelity Trader+"
     ],
     "path": "[\\\\/]68D72461-B3DB-4FE2-AE47-50EF0FD7254F_"
-  }
+  },
+  "trading": true,
+  "references": [
+    "https://www.fidelity.com/trading/trader-desktop-user-guide/navigation",
+    "https://www.fidelity.com/learning-center/trading-investing/trading-platforms/atp-ftplus/",
+    "https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/active-trader/things-to-know.pdf"
+  ],
+  "layout": {
+    "0,0": "back",
+    "1,0": "buy",
+    "2,0": "sell",
+    "3,0": "otoco",
+    "4,0": "positions",
+    "0,1": "orders",
+    "1,1": "trade",
+    "2,1": "chart",
+    "3,1": "riskcheck",
+    "4,1": "tradeplan",
+    "0,2": "planpage",
+    "1,2": "managepage",
+    "2,2": "journal",
+    "3,2": "settings",
+    "4,2": "focus"
+  },
+  "design": {
+    "id": "fidelitytrader",
+    "name": "Fidelity",
+    "background": "#10120f",
+    "surface": "#1b2019",
+    "ink": "#edf3e6",
+    "accent": "#83bc3b",
+    "border": "#3d4a35",
+    "radius": 9
+  },
+  "pages": [
+    {
+      "name": "TRADE \u00b7 entry / bracket",
+      "layout": {
+        "0,0": "back",
+        "1,0": "buy",
+        "2,0": "sell",
+        "3,0": "otoco",
+        "4,0": "positions",
+        "0,1": "orders",
+        "1,1": "trade",
+        "2,1": "chart",
+        "3,1": "riskcheck",
+        "4,1": "tradeplan",
+        "0,2": "planpage",
+        "1,2": "managepage",
+        "2,2": "journal",
+        "3,2": "settings",
+        "4,2": "focus"
+      }
+    },
+    {
+      "name": "PLAN \u00b7 prepare / review",
+      "layout": {
+        "0,0": "tradepage",
+        "1,0": "tradeplan",
+        "2,0": "riskcheck",
+        "3,0": "chart",
+        "4,0": "watchlist",
+        "0,1": "positions",
+        "1,1": "orders",
+        "2,1": "balances",
+        "3,1": "alerts",
+        "4,1": "news",
+        "0,2": "managepage",
+        "1,2": "settings",
+        "2,2": "journal",
+        "3,2": "layouts",
+        "4,2": "focus"
+      }
+    },
+    {
+      "name": "MANAGE \u00b7 positions / protection",
+      "layout": {
+        "0,0": "tradepage",
+        "1,0": "positions",
+        "2,0": "orders",
+        "3,0": "otoco",
+        "4,0": "balances",
+        "0,1": "partial",
+        "1,1": "breakeven",
+        "2,1": "trail",
+        "3,1": "journal",
+        "4,1": "alerts",
+        "0,2": "planpage",
+        "1,2": "cancelall",
+        "3,2": "flatten",
+        "4,2": "focus"
+      }
+    }
+  ]
 }
