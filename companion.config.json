@@ -1,0 +1,245 @@
+{
+  "id": "fidelitytrader",
+  "folder": "FIDELITY_TRADER_PLUS",
+  "repo": "streamdeck_fidelity_trader_plus",
+  "app": "Fidelity Trader+",
+  "glyph": "chart",
+  "theme": "gold",
+  "reference": "https://www.fidelity.com/trading/trader-desktop-user-guide/navigation",
+  "commands": [
+    {
+      "id": "back",
+      "name": "Back",
+      "glyph": "back",
+      "theme": "gold",
+      "description": "Return to the main Stream Deck keys.",
+      "operation": "back"
+    },
+    {
+      "id": "focus",
+      "name": "Focus app",
+      "glyph": "target",
+      "theme": "ocean",
+      "description": "Bring the verified app window to the front.",
+      "operation": "focus"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "glyph": "grid",
+      "theme": "gold",
+      "description": "Open Tools through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ]
+      ]
+    },
+    {
+      "id": "chart",
+      "name": "Chart",
+      "glyph": "chart",
+      "theme": "mint",
+      "description": "Open Chart through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Chart",
+          "Charts"
+        ]
+      ]
+    },
+    {
+      "id": "watchlist",
+      "name": "Watchlist",
+      "glyph": "doc",
+      "theme": "lemonade",
+      "description": "Open Watchlist through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Watchlist",
+          "Watchlists"
+        ]
+      ]
+    },
+    {
+      "id": "positions",
+      "name": "Positions",
+      "glyph": "briefcase",
+      "theme": "emerald",
+      "description": "Open Positions through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Positions"
+        ]
+      ]
+    },
+    {
+      "id": "news",
+      "name": "News",
+      "glyph": "doc",
+      "theme": "coral",
+      "description": "Open News through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "News",
+          "News & Research"
+        ]
+      ]
+    },
+    {
+      "id": "alerts",
+      "name": "Alerts",
+      "glyph": "warning",
+      "theme": "sunset",
+      "description": "Open Alerts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Alerts"
+        ]
+      ]
+    },
+    {
+      "id": "layouts",
+      "name": "Layouts",
+      "glyph": "grid",
+      "theme": "violet",
+      "description": "Open Layouts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Layouts",
+          "Layout"
+        ]
+      ]
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "glyph": "gear",
+      "theme": "peach",
+      "description": "Open Settings through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Settings"
+        ]
+      ]
+    },
+    {
+      "id": "copy",
+      "name": "Copy",
+      "glyph": "copy",
+      "theme": "violet",
+      "shortcut": "Ctrl+C",
+      "description": "Copy in the app. An optional custom shortcut can replace the default."
+    },
+    {
+      "id": "paste",
+      "name": "Paste",
+      "glyph": "paste",
+      "theme": "crimson",
+      "shortcut": "Ctrl+V",
+      "description": "Paste in the app. An optional custom shortcut can replace the default."
+    },
+    {
+      "id": "nextfield",
+      "name": "Next field",
+      "glyph": "push",
+      "theme": "azure",
+      "shortcut": "Tab",
+      "description": "Next field in the app. An optional custom shortcut can replace the default."
+    },
+    {
+      "id": "previousfield",
+      "name": "Previous field",
+      "glyph": "pull",
+      "theme": "iris",
+      "shortcut": "Shift+Tab",
+      "description": "Previous field in the app. An optional custom shortcut can replace the default."
+    },
+    {
+      "id": "escape",
+      "name": "Dismiss",
+      "glyph": "closewin",
+      "theme": "slate",
+      "shortcut": "Escape",
+      "description": "Dismiss a menu or dialog. Does not submit a form."
+    },
+    {
+      "id": "balances",
+      "name": "Balances",
+      "glyph": "dollar",
+      "theme": "tropical",
+      "description": "Open Balances through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Balances"
+        ]
+      ]
+    },
+    {
+      "id": "leveltwo",
+      "name": "Level 2",
+      "glyph": "candles",
+      "theme": "ocean",
+      "description": "Open Level 2 through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Level 2"
+        ]
+      ]
+    },
+    {
+      "id": "timesales",
+      "name": "Time and sales",
+      "glyph": "waves",
+      "theme": "cyan",
+      "description": "Open Time and sales through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
+      "menu": [
+        [
+          "Tools"
+        ],
+        [
+          "Time & Sales",
+          "Time and Sales"
+        ]
+      ]
+    },
+    {
+      "id": "shortcut",
+      "name": "Custom shortcut",
+      "glyph": "keyboard",
+      "theme": "electric",
+      "description": "Set your own app shortcut, for example Ctrl+Shift+N."
+    }
+  ],
+  "uuid": "com.dailyops.fidelitytrader.v1",
+  "name": "Fidelity Trader+ Controls",
+  "version": "1.0.0.0",
+  "profile": "profiles/Fidelity Trader+",
+  "selector": {
+    "names": [
+      "Fidelity Trader+"
+    ],
+    "path": "[\\\\/]68D72461-B3DB-4FE2-AE47-50EF0FD7254F_"
+  }
+}
