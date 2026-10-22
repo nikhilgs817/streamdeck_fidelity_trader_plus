@@ -4,7 +4,7 @@
   "PluginId": "com.dailyops.fidelitytrader.v1",
   "PluginFolder": "fidelitytrader",
   "Profile": "profiles/Fidelity Trader+",
-  "Version": "1.1.1.0",
+  "Version": "1.1.2.0",
   "Repository": "nikhilgs817/streamdeck_fidelity_trader_plus",
   "Toolkit": {
     "Version": "2.6.1.0",

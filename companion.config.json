@@ -23,7 +23,7 @@
       "trading": "submit",
       "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
       "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
-      "executionNote": "BROKER LIMIT · Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
+      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
     },
     {
       "id": "sell",
@@ -33,7 +33,7 @@
       "trading": "submit",
       "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
       "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
-      "executionNote": "BROKER LIMIT · Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
+      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
     },
     {
       "id": "otoco",
@@ -437,7 +437,7 @@
   ],
   "uuid": "com.dailyops.fidelitytrader.v1",
   "name": "Fidelity Trader+ Controls",
-  "version": "1.1.1.0",
+  "version": "1.1.2.0",
   "profile": "profiles/Fidelity Trader+",
   "selector": {
     "names": [
@@ -480,7 +480,7 @@
   },
   "pages": [
     {
-      "name": "TRADE · entry / bracket",
+      "name": "TRADE \u00b7 entry / bracket",
       "layout": {
         "0,0": "back",
         "1,0": "buy",
@@ -500,7 +500,7 @@
       }
     },
     {
-      "name": "PLAN · prepare / review",
+      "name": "PLAN \u00b7 prepare / review",
       "layout": {
         "0,0": "tradepage",
         "1,0": "tradeplan",
@@ -520,7 +520,7 @@
       }
     },
     {
-      "name": "MANAGE · positions / protection",
+      "name": "MANAGE \u00b7 positions / protection",
       "layout": {
         "0,0": "tradepage",
         "1,0": "positions",
