@@ -3,43 +3,43 @@
   "folder": "FIDELITY_TRADER_PLUS",
   "repo": "streamdeck_fidelity_trader_plus",
   "app": "Fidelity Trader+",
-  "glyph": "chart",
-  "theme": "gold",
+  "glyph": "candles",
+  "theme": "fidelitytrader",
   "reference": "https://www.fidelity.com/trading/trader-desktop-user-guide/navigation",
   "commands": [
     {
       "id": "back",
       "name": "Back",
       "glyph": "back",
-      "theme": "gold",
+      "theme": "fidelitytrader",
       "description": "Return to the main Stream Deck keys.",
       "operation": "back"
     },
     {
       "id": "buy",
       "name": "Buy",
-      "glyph": "tradebuy",
-      "theme": "emerald",
+      "glyph": "buy",
+      "theme": "fidelitytrader",
       "trading": "submit",
       "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
       "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
-      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
+      "executionNote": "BROKER LIMIT · Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
     },
     {
       "id": "sell",
       "name": "Sell",
-      "glyph": "tradesell",
-      "theme": "crimson",
+      "glyph": "sell",
+      "theme": "fidelitytrader",
       "trading": "submit",
       "description": "Send a user-mapped broker hotkey once. Fidelity native hotkeys open an order preview and still require Place; they do not satisfy immediate submission.",
       "setup": "The current desktop hotkey editor explicitly says complete defaults go to order preview, and Place submits. Immediate execution cannot be provided by a native Fidelity hotkey alone. No extra Enter or guessed screen click is added.",
-      "executionNote": "BROKER LIMIT \u00b7 Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
+      "executionNote": "BROKER LIMIT · Native Fidelity hotkeys open a preview. Place is still required; this is not immediate submission."
     },
     {
       "id": "otoco",
       "name": "OTOCO",
-      "glyph": "tradebracket",
-      "theme": "cosmic",
+      "glyph": "otoco",
+      "theme": "fidelitytrader",
       "trading": "bracket",
       "description": "Open the editable entry, profit-target and stop-loss bracket. This button does not send the order.",
       "menu": [
@@ -71,8 +71,8 @@
     {
       "id": "positions",
       "name": "Positions",
-      "glyph": "briefcase",
-      "theme": "ocean",
+      "glyph": "positions",
+      "theme": "fidelitytrader",
       "menu": [
         [
           "Tools"
@@ -88,8 +88,8 @@
     {
       "id": "orders",
       "name": "Orders",
-      "glyph": "tradeorders",
-      "theme": "gold",
+      "glyph": "orders",
+      "theme": "fidelitytrader",
       "menu": [
         [
           "Tools"
@@ -105,8 +105,8 @@
     {
       "id": "trade",
       "name": "Trade ticket",
-      "glyph": "candles",
-      "theme": "mint",
+      "glyph": "ticket",
+      "theme": "fidelitytrader",
       "menu": [
         [
           "Tools"
@@ -122,8 +122,8 @@
     {
       "id": "chart",
       "name": "Chart",
-      "glyph": "chart",
-      "theme": "mint",
+      "glyph": "candles",
+      "theme": "fidelitytrader",
       "description": "Open Chart through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -138,8 +138,8 @@
     {
       "id": "leveltwo",
       "name": "Level 2",
-      "glyph": "candles",
-      "theme": "ocean",
+      "glyph": "leveltwo",
+      "theme": "fidelitytrader",
       "description": "Open Level 2 through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -153,8 +153,8 @@
     {
       "id": "timesales",
       "name": "Time and sales",
-      "glyph": "waves",
-      "theme": "cyan",
+      "glyph": "timesales",
+      "theme": "fidelitytrader",
       "description": "Open Time and sales through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -169,8 +169,8 @@
     {
       "id": "watchlist",
       "name": "Watchlist",
-      "glyph": "doc",
-      "theme": "lemonade",
+      "glyph": "watchlist",
+      "theme": "fidelitytrader",
       "description": "Open Watchlist through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -185,8 +185,8 @@
     {
       "id": "settings",
       "name": "Settings",
-      "glyph": "gear",
-      "theme": "peach",
+      "glyph": "settings",
+      "theme": "fidelitytrader",
       "description": "Open Settings through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -197,16 +197,16 @@
     {
       "id": "focus",
       "name": "Focus app",
-      "glyph": "target",
-      "theme": "ocean",
+      "glyph": "focus",
+      "theme": "fidelitytrader",
       "description": "Bring the verified app window to the front.",
       "operation": "focus"
     },
     {
       "id": "tools",
       "name": "Tools",
-      "glyph": "grid",
-      "theme": "gold",
+      "glyph": "tools",
+      "theme": "fidelitytrader",
       "description": "Open Tools through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -218,8 +218,8 @@
     {
       "id": "news",
       "name": "News",
-      "glyph": "doc",
-      "theme": "coral",
+      "glyph": "news",
+      "theme": "fidelitytrader",
       "description": "Open News through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -235,8 +235,8 @@
     {
       "id": "alerts",
       "name": "Alerts",
-      "glyph": "warning",
-      "theme": "sunset",
+      "glyph": "alerts",
+      "theme": "fidelitytrader",
       "description": "Open Alerts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -251,8 +251,8 @@
     {
       "id": "layouts",
       "name": "Layouts",
-      "glyph": "grid",
-      "theme": "violet",
+      "glyph": "layouts",
+      "theme": "fidelitytrader",
       "description": "Open Layouts through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -266,7 +266,7 @@
       "id": "copy",
       "name": "Copy",
       "glyph": "copy",
-      "theme": "violet",
+      "theme": "fidelitytrader",
       "shortcut": "Ctrl+C",
       "description": "Copy in the app. An optional custom shortcut can replace the default.",
       "hidden": true
@@ -275,7 +275,7 @@
       "id": "paste",
       "name": "Paste",
       "glyph": "paste",
-      "theme": "crimson",
+      "theme": "fidelitytrader",
       "shortcut": "Ctrl+V",
       "description": "Paste in the app. An optional custom shortcut can replace the default.",
       "hidden": true
@@ -283,8 +283,8 @@
     {
       "id": "nextfield",
       "name": "Next field",
-      "glyph": "push",
-      "theme": "azure",
+      "glyph": "nextfield",
+      "theme": "fidelitytrader",
       "shortcut": "Tab",
       "description": "Next field in the app. An optional custom shortcut can replace the default.",
       "hidden": true
@@ -292,8 +292,8 @@
     {
       "id": "previousfield",
       "name": "Previous field",
-      "glyph": "pull",
-      "theme": "iris",
+      "glyph": "previousfield",
+      "theme": "fidelitytrader",
       "shortcut": "Shift+Tab",
       "description": "Previous field in the app. An optional custom shortcut can replace the default.",
       "hidden": true
@@ -301,8 +301,8 @@
     {
       "id": "escape",
       "name": "Dismiss",
-      "glyph": "closewin",
-      "theme": "slate",
+      "glyph": "escape",
+      "theme": "fidelitytrader",
       "shortcut": "Escape",
       "description": "Dismiss a menu or dialog. Does not submit a form.",
       "hidden": false
@@ -310,8 +310,8 @@
     {
       "id": "balances",
       "name": "Balances",
-      "glyph": "dollar",
-      "theme": "tropical",
+      "glyph": "balances",
+      "theme": "fidelitytrader",
       "description": "Open Balances through the app's accessible navigation. If unavailable, enter your configured keyboard shortcut.",
       "menu": [
         [
@@ -326,16 +326,16 @@
     {
       "id": "shortcut",
       "name": "Custom shortcut",
-      "glyph": "keyboard",
-      "theme": "electric",
+      "glyph": "shortcut",
+      "theme": "fidelitytrader",
       "description": "Set your own app shortcut, for example Ctrl+Shift+N.",
       "hidden": false
     },
     {
       "id": "tradepage",
       "name": "Trade",
-      "glyph": "grid",
-      "theme": "emerald",
+      "glyph": "tradepage",
+      "theme": "fidelitytrader",
       "description": "Show the Trade Stream Deck page.",
       "operation": "page",
       "page": 0
@@ -343,8 +343,8 @@
     {
       "id": "planpage",
       "name": "Plan",
-      "glyph": "grid",
-      "theme": "emerald",
+      "glyph": "planpage",
+      "theme": "fidelitytrader",
       "description": "Show the Plan / Scan Stream Deck page.",
       "operation": "page",
       "page": 1
@@ -352,8 +352,8 @@
     {
       "id": "managepage",
       "name": "Manage",
-      "glyph": "grid",
-      "theme": "emerald",
+      "glyph": "managepage",
+      "theme": "fidelitytrader",
       "description": "Show the Manage Stream Deck page.",
       "operation": "page",
       "page": 2
@@ -361,32 +361,32 @@
     {
       "id": "riskcheck",
       "name": "Risk check",
-      "glyph": "target",
-      "theme": "emerald",
+      "glyph": "riskcheck",
+      "theme": "fidelitytrader",
       "description": "Open your risk and position-sizing page. Configure its full URL.",
       "operation": "url"
     },
     {
       "id": "tradeplan",
       "name": "Trade plan",
-      "glyph": "doc",
-      "theme": "emerald",
+      "glyph": "tradeplan",
+      "theme": "fidelitytrader",
       "description": "Open your trade plan: daily trend, setup, entry, invalidation, target and size. Configure its full URL.",
       "operation": "url"
     },
     {
       "id": "journal",
       "name": "Journal",
-      "glyph": "doc",
-      "theme": "emerald",
+      "glyph": "journal",
+      "theme": "fidelitytrader",
       "description": "Open your trading journal to record the setup, execution and outcome. Configure its full URL.",
       "operation": "url"
     },
     {
       "id": "partial",
       "name": "Trim 1/3",
-      "glyph": "tradesell",
-      "theme": "emerald",
+      "glyph": "partial",
+      "theme": "fidelitytrader",
       "description": "Send your configured partial-exit hotkey. The broker must calculate one third of the current position and preserve or resize remaining protection.",
       "trading": "submit",
       "requiresBinding": true,
@@ -395,8 +395,8 @@
     {
       "id": "breakeven",
       "name": "Stop to B/E",
-      "glyph": "tradebracket",
-      "theme": "emerald",
+      "glyph": "breakeven",
+      "theme": "fidelitytrader",
       "description": "Send your configured stop-to-breakeven hotkey. The broker must derive the actual fill price and remaining quantity.",
       "trading": "submit",
       "requiresBinding": true,
@@ -405,8 +405,8 @@
     {
       "id": "trail",
       "name": "Trail stop",
-      "glyph": "tradebracket",
-      "theme": "emerald",
+      "glyph": "trail",
+      "theme": "fidelitytrader",
       "description": "Open the broker stop editor or send its configured trailing-stop hotkey. Review the remaining size and 5-minute structure.",
       "trading": "panel",
       "requiresBinding": true,
@@ -415,8 +415,8 @@
     {
       "id": "flatten",
       "name": "Flatten",
-      "glyph": "closewin",
-      "theme": "emerald",
+      "glyph": "flatten",
+      "theme": "fidelitytrader",
       "description": "Hold for one second to send the configured close-position action once. Match its cancel/close behavior in your broker.",
       "trading": "submit",
       "requiresBinding": true,
@@ -426,8 +426,8 @@
     {
       "id": "cancelall",
       "name": "Cancel orders",
-      "glyph": "tradeorders",
-      "theme": "emerald",
+      "glyph": "cancelall",
+      "theme": "fidelitytrader",
       "description": "Hold for one second to send the configured cancel-orders action once. Cancelling protective orders can leave a position unprotected.",
       "trading": "submit",
       "requiresBinding": true,
@@ -437,7 +437,7 @@
   ],
   "uuid": "com.dailyops.fidelitytrader.v1",
   "name": "Fidelity Trader+ Controls",
-  "version": "1.1.2.0",
+  "version": "1.2.0.0",
   "profile": "profiles/Fidelity Trader+",
   "selector": {
     "names": [
@@ -470,17 +470,19 @@
   },
   "design": {
     "id": "fidelitytrader",
-    "name": "Fidelity",
-    "background": "#10120f",
-    "surface": "#1b2019",
-    "ink": "#edf3e6",
-    "accent": "#83bc3b",
-    "border": "#3d4a35",
+    "name": "Fidelity Trader+",
+    "styleName": "Trader+ Dark",
+    "light": true,
+    "background": "#0A0C09",
+    "surface": "#151913",
+    "ink": "#EEF3E8",
+    "accent": "#8DC63F",
+    "border": "#323B2C",
     "radius": 9
   },
   "pages": [
     {
-      "name": "TRADE \u00b7 entry / bracket",
+      "name": "TRADE · entry / bracket",
       "layout": {
         "0,0": "back",
         "1,0": "buy",
@@ -500,7 +502,7 @@
       }
     },
     {
-      "name": "PLAN \u00b7 prepare / review",
+      "name": "PLAN · prepare / review",
       "layout": {
         "0,0": "tradepage",
         "1,0": "tradeplan",
@@ -520,7 +522,7 @@
       }
     },
     {
-      "name": "MANAGE \u00b7 positions / protection",
+      "name": "MANAGE · positions / protection",
       "layout": {
         "0,0": "tradepage",
         "1,0": "positions",
@@ -538,5 +540,6 @@
         "4,2": "focus"
       }
     }
-  ]
+  ],
+  "fastKeys": true
 }

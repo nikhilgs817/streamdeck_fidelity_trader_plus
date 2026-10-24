@@ -1,6 +1,6 @@
 # Fidelity Trader+ Controls
 
-Unofficial Windows companion for Elgato Stream Deck. Version 1.1.2.0.
+Unofficial Windows companion for Elgato Stream Deck. Version 1.2.0.0.
 
 Three editable pages organize preparation, execution and position management. Stocks only: no options workflow is bundled.
 
@@ -12,17 +12,17 @@ Three editable pages organize preparation, execution and position management. St
 
 Keys marked SETUP have no working default. Match a broker-supported hotkey in the inspector. Trim 1/3, Stop to B/E and Trail stop require corresponding broker capabilities; the plugin cannot infer fills, position size or stop prices. If unsupported, manage the order in Positions / Orders. Trade plan, Risk check and Journal accept your own full http(s) URLs. No personal service addresses are bundled.
 
-The signed-in desktop hotkey editor confirms that complete defaults open an order preview; **Place is still required to submit**. Native hotkeys alone do not meet the immediate-execution requirement. No extra Enter or guessed click is appended.
+In Fidelity Trader+, a hotkey with complete order defaults opens an **order preview**; you still press **Place** in the app to submit. The plugin never presses Enter or clicks Place for you.
 
-The editable OTOCO ticket was visually verified through Tools > Trade > Stocks dropdown > Conditional > Action > Buy + Sell bracket. Entry, target and stop remain editable, with no order sent. This PC exposes no useful accessibility controls for automatic panel/template selection, so automatic navigation and bracket opening remain unverified. The menu fallback requires an accessible app version; optional shortcut overrides require a matching broker-supported binding. No universal Positions, bracket, breakeven or trailing-stop shortcut is assumed.
+The editable OTOCO ticket was visually verified through Tools > Trade > Stocks dropdown > Conditional > Action > Buy + Sell bracket. Entry, target and stop remain editable, with no order sent. The app exposes few accessibility controls, so automatic panel and bracket opening are not guaranteed. The menu fallback requires an accessible app version; optional shortcut overrides require a matching broker-supported binding. No universal Positions, bracket, breakeven or trailing-stop shortcut is assumed.
 
-The input dispatcher and deck behavior are tested with isolated fixtures. No live orders were placed, changed or cancelled during validation.
+The Custom shortcut and other non-trading keys send one shortcut and never Enter, so they cannot be used to bypass the trading safeguards. The input dispatcher and deck behavior are tested with isolated fixtures. No live orders were placed, changed or cancelled during validation.
 
 ![Animated keys](docs/images/deck.gif)
 
 ## Install in three steps
 
-1. Download **FidelityTraderPlusControls-Installer-1.1.2.0.zip** from [Releases](https://github.com/nikhilgs817/streamdeck_fidelity_trader_plus/releases/latest).
+1. Download **FidelityTraderPlusControls-Installer-1.2.0.0.zip** from [Releases](https://github.com/nikhilgs817/streamdeck_fidelity_trader_plus/releases/latest).
 2. Right-click the ZIP, choose **Extract All**, and open the extracted folder.
 3. Double-click **Install-FidelityTraderPlusControls.cmd**. Wait for the installation success message; Stream Deck restarts automatically.
 
@@ -34,7 +34,9 @@ Requires Windows 10/11 64-bit and Stream Deck 7.1+. Open or focus Fidelity Trade
 
 ## Appearance
 
-App theme is the default: app-specific surfaces, type, corners and motion. Labels stay still while icon details animate in a six-second loop at 12 fps. Hidden keys stop animating. Colourful, Vivid and Pro remain available with 29 colours, custom labels, glyphs and pictures. App theme uses its own palette; choose another style for custom colours. Buy and Sell retain their semantic colours in App theme.
+![Styles](docs/images/styles.png)
+
+**Trader+ Dark** is the default: black workstation keys, a Fidelity-style green accent, bold Segoe UI labels and an animated icon on every key (candles grow, Level 2 bars breathe, time & sales scrolls, the alert bell rings, the trail-stop dot moves). The icon moves gently and an accent light travels round the key; labels stay still. **Buy is always green and Sell always red** in every style. Trader+ Light, Colourful, Vivid and Pro use the same icons. Decorative candles, bars and dots are animation only, never live market data.
 
 ## Build and verify
 
@@ -61,6 +63,10 @@ Installer: `dist/com.dailyops.fidelitytrader.v1.streamDeckPlugin`. Sources and d
 - [Official app documentation 3](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/active-trader/things-to-know.pdf)
 - [Windows Daily Toolkit](https://github.com/nikhilgs817/windows_daily_toolkit)
 
-Not affiliated with or endorsed by the app publisher. App names belong to their respective owners. MIT license.
+## Trading risk
+
+Trading involves risk of loss. This plugin only sends the keyboard shortcuts you configure; your broker settings decide what a hotkey does. **Use at your own risk, test with a small or simulated order first, and keep the keys you use for orders where you won't press them by accident.** This is not financial advice and there is no warranty or liability (see LICENSE).
+
+Not affiliated with or endorsed by Fidelity Investments. Fidelity and Trader+ are trademarks of FMR LLC. The icons are original artwork. MIT license.
 
 The build uses the official Rollup WASM package to avoid native parser dependencies on restricted Windows PCs.
