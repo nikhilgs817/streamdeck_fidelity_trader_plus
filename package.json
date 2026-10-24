@@ -1,7 +1,7 @@
 {
   "name": "streamdeck-fidelity-trader-plus",
   "type": "module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Unofficial Fidelity Trader+ controls for Elgato Stream Deck on Windows",
   "scripts": {
     "build": "node tools/generate.mjs && rollup -c",

@@ -437,7 +437,7 @@
   ],
   "uuid": "com.dailyops.fidelitytrader.v1",
   "name": "Fidelity Trader+ Controls",
-  "version": "1.2.0.0",
+  "version": "1.2.1.0",
   "profile": "profiles/Fidelity Trader+",
   "selector": {
     "names": [
