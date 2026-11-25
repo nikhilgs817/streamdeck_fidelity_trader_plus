@@ -1,6 +1,6 @@
 # Fidelity Trader+ Controls
 
-Unofficial Windows companion for Elgato Stream Deck. Version 2.0.0.0.
+Unofficial Windows companion for Elgato Stream Deck. Version 2.1.0.0.
 
 Three editable pages organize preparation, execution and position management. Stocks only: no options workflow is bundled.
 
@@ -22,7 +22,7 @@ The Custom shortcut and other non-trading keys send one shortcut and never Enter
 
 ## Install in three steps
 
-1. Download **FidelityTraderPlusControls-Installer-2.0.0.0.zip** from [Releases](https://github.com/nikhilgs817/streamdeck_fidelity_trader_plus/releases/latest).
+1. Download **FidelityTraderPlusControls-Installer-2.1.0.0.zip** from [Releases](https://github.com/nikhilgs817/streamdeck_fidelity_trader_plus/releases/latest).
 2. Right-click the ZIP, choose **Extract All**, and open the extracted folder.
 3. Double-click **Install-FidelityTraderPlusControls.cmd**. Wait for the installation success message; Stream Deck restarts automatically.
 
@@ -36,7 +36,19 @@ Requires Windows 10/11 64-bit and Stream Deck 7.1+. Open or focus Fidelity Trade
 
 ![Styles](docs/images/styles.png)
 
-**Trader+ Dark** is the default: black workstation keys, a Fidelity-style green accent, bold Segoe UI labels and an animated icon on every key (candles grow, Level 2 bars breathe, time & sales scrolls, the alert bell rings, the trail-stop dot moves). The icon moves gently and an accent light travels round the key; labels stay still. **Buy is always green and Sell always red** in every style. Trader+ Light, Colourful, Vivid and Pro use the same icons. Decorative candles, bars and dots are animation only, never live market data.
+**Glass** is the default: frosted dark keys, a soft rim light, Title Case labels and an animated icon on every key (candles grow, Level 2 bars breathe, time & sales scrolls, the alert bell rings, the trail-stop dot moves). Pick another look for one key, or press **Use this look on all keys** in any key's settings to restyle the whole deck.
+
+| Style | Look |
+|---|---|
+| **Glass** (default) | Frosted dark glass, a quiet glow and Title Case labels |
+| **Trader+ Dark** | Black workstation keys, a Fidelity-style green accent, bold Segoe UI labels |
+| **Trader+ Light** | Light keys with the same icons |
+| **Vivid** | White icons on a bright gradient |
+| **Neon** | Coloured icons with a glowing edge on dark glass (formerly Colourful) |
+| **Mono** | Monochrome icons with a single colour dot |
+| **Pro** | Restrained slate keys with a thin accent strip |
+
+Under **Look** you can also pick any of 40+ colour themes or two colours of your own, Full, Glow only, Icon only or Still animation at four speeds, glow strength, a press ripple, the label case and your own label (up to 18 letters) or picture. Keys go still while Windows **Animation effects** is off. **Buy is always green and Sell always red** in every style. Decorative candles, bars and dots are animation only, never live market data. The design is shared with [Windows Toolkit](https://github.com/nikhilgs817/windows_toolkit).
 
 ## Build and verify
 
