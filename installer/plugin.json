@@ -11,7 +11,7 @@
     "Url": "https://github.com/nikhilgs817/windows_toolkit/releases/download/v3.0.0/WindowsToolkit-Installer-3.0.0.0.zip",
     "Sha256": "31506048f13823fdbff39b69dbfb66cb63952bb1a5ffb8c73b477a319b1df0b5"
   },
-  "PackageSha256": "54106081995f8efa2f05115695cb7ab55eff454e6163b401aedb33569d1da707",
+  "PackageSha256": "30a4120d893acd8f7b5ae18f258b2b3d54acaf1606a929d8ea9a84dc2b86eefa",
   "RetiredPluginIds": [
     "com.dailyops.fidelitytrader.v1"
   ]
